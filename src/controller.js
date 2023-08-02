@@ -9,14 +9,14 @@ export default class Controller {
         document.addEventListener('keyup', this.handleKeyUp.bind(this));
 
         this.backgroundSound = new Audio();
-        this.backgroundSound.src = './src/sound_game.mp3';
+        this.backgroundSound.src = './src/sound/sound_game.mp3';
         this.backgroundSound.loop = true;
         this.backgroundSound.volume = 0.6;
         this.pauseSound = new Audio();
-        this.pauseSound.src = './src/sound_pause.mp3';
+        this.pauseSound.src = './src/sound/sound_pause.mp3';
         this.pauseSound.volume = 0.4;
         this.loseSound = new Audio();
-        this.loseSound.src = './src/sound_lose.wav';
+        this.loseSound.src = './src/sound/sound_lose.wav';
         this.loseSound.loop = false;
         this.loseSound.volume = 0.6;
         this.loseSoundCount = 0;

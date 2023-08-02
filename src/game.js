@@ -249,7 +249,7 @@ export default class Game {
                 continue;
             } else if (numberOfBlocks === columns) {
                 lines.unshift(y);
-                this.soundClearLines.src = './src/sound_clear_lines.wav';
+                this.soundClearLines.src = './src/sound/sound_clear_lines.wav';
                 this.soundClearLines.volume = 0.2;
                 this.soundClearLines.play();
             }
